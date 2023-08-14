@@ -121,10 +121,12 @@ Your inscriptions.json file will look like this:
 ## Error hunting 
 
 After succesfully opening a pull request, your metadata files will be auto-tested for compatibility with the main repo. 
+
 ✅ Green check mark means there were no problems found and your files should be ready to be merged into the repo by the maintainer. 
+
 ❌ Red mark means there were conflicts found in your file. Click on "Details" to see the autocheck log. In the log, the end of the "Run tests" section will give you a hint on what went wrong. 
 
-## Common mistakes
+### Common mistakes
 
 #### Wrong "supply" in the meta.json. 
 If the supply is lower than the amount of inscriptions in the inscriptions.json, the website may not list your whole collection.
@@ -138,10 +140,10 @@ correct:
 
 #### Wrong directory. 
 Your meta.json and inscriptions.json should go into /ordinals-collections/collections/your-collection-name/... 
-Ideally, "your-collection-name" and "slug" within the meta.json are identical. 
+Ideally, "your-collection-name" and "slug" within the meta.json are identical. To correct the directory in your open pull request, simply go to "Edit" your jsons within it, and then look at the directory above the edit section. If you backspace on the filename you can edit the /directory entry too!
 
 #### Outdated fork used for creating a pull request. 
 When UPDATING your collection metadata, please make sure you have updated/synchronized the repo fork your are creating the pull request for. 
 
 #### Different directory or "slug" in metadata update 
-Please use THE SAME directory (and also "slug" in meta.json) as you used for your collection before. Otherwise your pull request will be conflicting with the main repo, and may require the maintainer to manually delete your old metadata before merging your new pull request. 
+Please use THE SAME directory (and also "slug" in meta.json) as you used for your collection before. Otherwise your pull request will be conflicting with the main repo, and may require the maintainer to manually delete your old metadata before merging your new pull request. To edit 
